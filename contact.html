@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/ficon32.png"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Montserrat:wght@700&&family=Baumans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <title>Red Webs</title>
+</head>
+<body>
+<header class="page-header">
+  <section>
+    <!--Logo!-->
+    <p class="logo">Red Webs</p>
+    <nav class="navigation page-header__item">
+      <ul role="menubar" class="nav-list page-header__item">
+        <li role="presentation"><a href="index.html" role="menuitem" class="nav-list__item">Home</a></li>
+        <li role="presentation"><a href="about.html" role="menuitem" class="nav-list__item">About Me</a></li>
+        <li role="presentation"><a href="work.html" role="menuitem" class="nav-list__item">Work</a></li>
+        <li role="presentation"><a href="contact.html" role="menuitem" class="nav-list__item nav-list__item--active">Contact</a></li>
+      </ul>
+    </nav>
+  </section>
+</header>
+<br />
+<section class="address">
+  <h1 class="address__header">
+    Send physical things here:
+  </h1>
+  <br />
+  <p>
+    Johnathon Purdy<br />
+    PO Box 741<br />
+    Wendell, NC 27591<br />
+    United States of America<br />
+    <br />
+  </p>
+</section>
+<section class="contact__info">
+    <h1>
+      Contact me through:
+    </h1>
+     <p class="contact__info--container">
+      Tel: <a href="tel:9193333111" class="tel" aria-label="Telephone number: 9 1 9. 3 3 3. 3 1 1 1">(919)333-3111</a><br />
+      Skype: <a href="skype:jepurdy313@gmail.com" class="skype">jepurdy313[at]gmail[dotcom]</a><br />
+      E-Mail: <a href="mailto:jepurdy313@gmail.com" class="email">jepurdy313[at]gmail[dotcom]</a><br />
+    </p>
+    
+    <form action="" method="post" id="contact-form" class="contact__form">
+        <label class="standard-label" for="contact-email">E-mail: </label>
+        <input type="email" id="contact-email" required><br />
+
+        <label class="standard-label" for="contact-tel">Telephone: </label>
+        <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br />
+
+        <label class="standard-label" for="contact-msg">Message: </label>
+        <textarea maxlength="240" id="contact-msg" required></textarea>
+
+        <input type="submit" value="Send Message">
+      </form>
+</section>
+  <footer class="page-footer">
+    <section>
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/jepurdy313" target="new_window"><img src="img/ghico.svg" alt="Github's Logo"></a>
+        <img src="img/twitico.svg" alt="Twitter's Logo">
+        <img src="img/linkico.svg" alt="LinkedIn's Logo">
+      </div>
+    </section>
+  </footer>
+<script src="js/tota11y.min.js"></script>
+</body>
+</html>
