@@ -30,6 +30,9 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+.logo__red {
+  color: #ff2c2c;
+}
 
 h1 {
   font-family: 'Montserrat', sans-serif;

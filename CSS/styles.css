@@ -27,6 +27,9 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+.title__red {
+  color: var(--red);
+}
 
 h1 {
   font-family: 'Montserrat', sans-serif;
