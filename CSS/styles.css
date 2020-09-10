@@ -10,15 +10,20 @@ Tetrinary Color (Silver): #e6e6e6
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
+
 :root {
   --background-color: #1d1d1d;
   --red: #ff2c2c;
   --magenta: #ff3270;
   --silver: #e6e6e6;
 }
+
 body {
   background-color: var(--background-color);
   color: var(--silver);
@@ -27,6 +32,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+
 .title__red {
   color: var(--red);
 }
@@ -36,6 +42,7 @@ h1 {
   font-weight: 700;
   font-size: 30px;
 }
+
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -43,51 +50,63 @@ h2 {
 }
 
 a {
-  color: var(--red)
+  color: var(--red);
 }
+
 a:visited {
   color: var(--red);
 }
-a:hover, a:focus {
-  /*No underline when hovering over link with mouse */
+
+a:hover,
+a:focus {
+  /* No underline when hovering over link with mouse */
   text-decoration: none;
 }
+
 a:active {
   color: var(--silver);
 }
 
-.nav-list__item, .nav-list__item:visited {
+.nav-list__item,
+.nav-list__item:visited {
   color: var(--silver);
 }
-.nav-list__item--active, .nav-list__item--active:visited {
+
+.nav-list__item--active,
+.nav-list__item--active:visited {
   text-decoration: none;
   color: var(--red);
 }
-.nav-list__item:focus, .nav-list__item:hover {
+
+.nav-list__item:focus,
+.nav-list__item:hover {
   text-decoration: none;
   color: var(--magenta);
 }
+
 .logo {
   float: left;
   font-size: 42px;
   padding: 60px;
   font-family: 'Baumans', sans-serif;
 }
+
 .page-header {
   font-family: 'Baumans', sans-serif;
   margin-bottom: 200px;
 }
+
 .nav-list {
   list-style-type: none;
   text-align: right;
   width: 100%;
   margin: right;
 }
+
 .nav-list li {
-  margin: 0px 50px;
+  margin: 0 50px;
   display: inline;
 }
-
 
 .profile {
   width: 80%;
@@ -95,6 +114,7 @@ a:active {
   max-width: 700px;
   margin: 0 auto;
 }
+
 .profile__pic {
   float: left;
   width: 250px;
@@ -102,7 +122,8 @@ a:active {
   border-radius: 50%;
 }
 
-button, .button {
+button,
+.button {
   border: none;
   font-family: inherit;
   background-color: var(--magenta);
@@ -113,15 +134,19 @@ button, .button {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
 }
-button:hover, button:focus, .button:hover, button:focus {
+
+button:hover,
+button:focus,
+.button:hover,
+button:focus {
   cursor: pointer;
   opacity: 0.8;
 }
+
 .button_secondary {
   background-color: var(--silver);
-  color: var(--background-color)
+  color: var(--background-color);
 }
-
 
 .page-footer {
   clear: both;
@@ -137,6 +162,7 @@ button:hover, button:focus, .button:hover, button:focus {
   text-align: center;
   box-sizing: border-box;
 }
+
 .about__me--header {
   font-family: 'Monserrat';
   text-align: left;
@@ -147,6 +173,7 @@ button:hover, button:focus, .button:hover, button:focus {
   max-width: 700px;
   flex-shrink: 1;
 }
+
 .about__me--item {
   display: block;
   max-width: 700px;
@@ -155,9 +182,10 @@ button:hover, button:focus, .button:hover, button:focus {
   text-align: center;
   justify-content: center;
   list-style: none;
-  padding-left: 0px;
+  padding-left: 0;
   padding-bottom: 10px;
 }
+
 .about__me--skills {
   flex: block;
   width: 300px;
@@ -165,26 +193,32 @@ button:hover, button:focus, .button:hover, button:focus {
   text-align: center;
   border: 1px solid #fff;
 }
+
 .about__me--imgtext {
   display: block;
   max-width: 420px;
   margin: auto;
   width: 420px;
 }
+
 .oak {
   max-width: 400px;
   height: auto;
   margin: 40px auto;
 }
+
 .oak__leaves--light {
   animation: 10s leaves__color--light infinite alternate linear;
 }
+
 .oak__leaves--med {
   animation: 10s leaves__color--med infinite alternate linear;
 }
+
 .oak__leaves--med2 {
   animation: 10s leaves__color--med2 infinite alternate linear;
 }
+
 .oak__leaves--dark {
   animation: 10s leaves__color--dark infinite alternate linear;
 }
@@ -198,123 +232,150 @@ button:hover, button:focus, .button:hover, button:focus {
   padding: 50px;
   vertical-align: top;
 }
+
 .contact__info {
   display: flex;
   flex-flow: column;
   text-align: center;
   margin: auto;
 }
+
 form {
   display: table;
   text-align: left;
   width: 100%;
 }
+
 input {
   display: table-cell;
   text-align: left;
   padding: 5px;
 }
 
-/*grid fallback*/
+/* grid fallback */
 .grid__item {
   display: inline-block;
   width: 33%;
 }
+
 @supports (display:grid) {
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  padding: 100px;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 100px;
+  }
+
+  .grid__item {
+    background-color: var(--background-color);
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 15px;
+    color: var(--magenta);
+    border: 1px solid var(--silver);
+  }
+
+  .grid__item:last-child {
+    grid-column: 3 / 3;
+    grid-row: 1 / 4;
+  }
 }
-.grid__item {
-  background-color: var(--background-color);
-  width: auto;
-  min-height: auto;
-  margin: 0;
-  padding: 15px;
-  color: var(--magenta);
-  border: 1px solid var(--silver);
-}
-.grid__item:last-child {
-  grid-column: 3 / 3;
-  grid-row: 1 / 4;
-}
-}
+
 @media all and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr;
   }
 }
+
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
 }
+
 @keyframes leaves__color--light {
   0% {
     fill: #a0b260;
   }
+
   33% {
     fill: #f6e645;
   }
+
   66% {
     fill: #f69f45;
   }
+
   100% {
     fill: #f64545;
   }
 }
+
 @keyframes leaves__color--med {
   0% {
-    fill: #739040
+    fill: #739040;
   }
+
   33% {
     fill: #e1ce14;
   }
+
   66% {
     fill: #ea851c;
   }
+
   100% {
     fill: #ee2121;
   }
 }
+
 @keyframes leaves__color--med2 {
   0% {
-    fill: #739040
+    fill: #739040;
   }
+
   33% {
     fill: #e1ce14;
   }
+
   66% {
     fill: #ea851c;
   }
+
   100% {
     fill: #ee2121;
   }
 }
+
 @keyframes leaves__color--dark {
   0% {
-    fill: #3F5A2A;
+    fill: #3f5a2a;
   }
+
   33% {
     fill: #b6a608;
   }
+
   66% {
     fill: #bf6a12;
   }
+
   100% {
     fill: #b60505;
   }
