@@ -35,7 +35,7 @@ body {
   line-height: 1.6;
 }
 
-.title__red {
+.logo__red {
   color: #ff2c2c;
 }
 
@@ -98,9 +98,8 @@ a:active {
 }
 
 .logo {
-  float: left;
   font-size: 42px;
-  padding: 60px;
+  padding: 20px;
   font-family: 'Baumans', sans-serif;
 }
 
@@ -112,8 +111,9 @@ a:active {
 .nav-list {
   list-style-type: none;
   text-align: right;
-  width: 100%;
+  width: auto;
   margin: right;
+  white-space: nowrap;
 }
 
 .nav-list li {
@@ -269,31 +269,51 @@ button:focus {
   animation: 10s leaves__color--dark infinite alternate linear;
 }
 
+.personal__info {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
 .address {
-  float: left;
-  margin-left: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 0 30px 0 50px;
+  display: inline-block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-flow: column;
   flex-flow: column;
   text-align: center;
-  padding: 50px;
+  padding: 20px;
   vertical-align: top;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
 }
 
 .contact__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  -ms-flex-flow: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column;
   flex-flow: column;
   text-align: center;
+  padding: 20px;
+}
+
+.contact__info--container {
+  text-align: center;
+}
+
+.contact__form {
+  padding: 100px 0 0;
+  width: 200px;
+  clear: both;
+  text-align: center;
   margin: auto;
+}
+
+.contact_form input {
+  width: 100%;
+  clear: both;
 }
 
 form {
@@ -309,6 +329,10 @@ input {
 }
 
 /* grid fallback */
+.grid__title {
+  padding: 0 0 0 30px;
+}
+
 .grid__item {
   display: inline-block;
   width: 33%;

@@ -11,56 +11,55 @@
 </head>
 <body>
 <header class="page-header">
-  <div>
-    <!--Logo!-->
-    <p class="logo"><span class="logo__red">Purdy</span>Webs</p>
-    <nav class="navigation page-header__item">
-      <ul role="menubar" class="nav-list page-header__item">
-        <li role="presentation"><a href="index.html" role="menuitem" class="nav-list__item">Home</a></li>
-        <li role="presentation"><a href="about.html" role="menuitem" class="nav-list__item">About Me</a></li>
-        <li role="presentation"><a href="work.html" role="menuitem" class="nav-list__item">Work</a></li>
-        <li role="presentation"><a href="contact.html" role="menuitem" class="nav-list__item nav-list__item--active">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+    <div>
+      <!--Logo - Replace with Image??!-->
+      <nav class="navigation page-header__item">
+        <ul role="menubar" class="nav-list page-header__item">
+          <li role="presentation"><a href="index.html" role="menuitem" class="nav-list__item">Home</a></li>
+          <li role="presentation"><a href="about.html" role="menuitem" class="nav-list__item">About Me</a></li>
+          <li role="presentation"><a href="work.html" role="menuitem" class="nav-list__item">Work</a></li>
+          <li role="presentation"><a href="contact.html" role="menuitem" class="nav-list__item nav-list__item--active">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="logo"><span class="logo__red">Purdy</span>Webs</p>
+    </div>
 </header>
 <br />
-<div class="address">
-  <h1 class="address__header">
+<section class="personal__info">
+  <div class="address">
+  <h2 class="address__header">
     Send physical things here:
-  </h1>
-  <br />
+  </h2>
   <p>
     Johnathon Purdy<br />
     PO Box 741<br />
     Wendell, NC 27591<br />
     United States of America<br />
-    <br />
   </p>
 </div>
 <div class="contact__info">
-    <h1>
+    <h2>
       Contact me through:
-    </h1>
+    </h2>
      <p class="contact__info--container">
       Tel: <a href="tel:9193333111" class="tel" aria-label="Telephone number: 9 1 9. 3 3 3. 3 1 1 1">(919)333-3111</a><br />
       Skype: <a href="skype:jepurdy313@gmail.com" class="skype">jepurdy313[at]gmail[dotcom]</a><br />
       E-Mail: <a href="mailto:jepurdy313@gmail.com" class="email">jepurdy313[at]gmail[dotcom]</a><br />
     </p>
-    
-    <form action="" method="post" id="contact-form" class="contact__form">
-        <label class="standard-label" for="contact-email">E-mail: </label>
-        <input type="email" id="contact-email" required><br />
+  </div>
+  <form action="#" method="post" id="contact-form" class="contact__form">
+    <label class="standard-label" for="contact-email">E-mail: </label>
+    <input type="email" id="contact-email" required><br />
 
-        <label class="standard-label" for="contact-tel">Telephone: </label>
-        <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br />
+    <label class="standard-label" for="contact-tel">Telephone: </label>
+    <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br />
 
-        <label class="standard-label" for="contact-msg">Message: </label>
-        <textarea maxlength="240" id="contact-msg" required></textarea>
+    <label class="standard-label" for="contact-msg">Message: </label>
+    <textarea maxlength="240" id="contact-msg" required></textarea>
 
-        <input type="submit" value="Send Message">
-      </form>
-</div>
+    <input type="submit" value="Send Message">
+  </form>
+</section>
   <footer class="page-footer">
     <div>
       <p>Find me on</p>
